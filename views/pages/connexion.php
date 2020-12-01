@@ -1,4 +1,9 @@
 <?php
+function protection_minimal($conn, $var)
+{
+    return mysqli_real_escape_string($conn, $_POST[$var]);
+}
+require_once 'login.inc.php';
 session_start();
 $_SESSION['connected'] = 'no';
 
@@ -30,13 +35,17 @@ $_SESSION['connected'] = 'no';
         }else {
             $password = protect_montexte($_POST["txt_password"]); 
         } 
-        if (!$err){
-            if($email == 'iamthephp@thebest.io' && $password == 'rasmuslerdorf'){ 
+        if (!$err){  
+            $sql = "select * from books where email = $email && password = $password";
+            $result = mysqli_query($conn, $sql);
+            $r = mysqli_fetch_assoc($result);
+            if(!$r){ 
+                $msg_badlogin = "L'email et/ou le mot de passe : NON correct.."; 
+            } else {
+               
                 $_SESSION['connected'] = 'yes'; 
                 $_SESSION['email'] = $email; 
                 header('Location: accueil.php');
-            } else {
-                $msg_badlogin = "L'email et/ou le mot de passe : NON correct..";
             }
         }
     }
@@ -50,7 +59,7 @@ $_SESSION['connected'] = 'no';
     </div>
 </div>
     <div class="container">
-        <div class="row justify-content-center">
+    <div class="row justify-content-center">
             <div class="col-10 myform mt-3 mb-5">
                 <form class="form-horizontal" action="index.php" method="post">
                     <fieldset>
