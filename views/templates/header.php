@@ -1,3 +1,4 @@
+<?php $page = $_GET['page'] ?? ''; ?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -21,13 +22,13 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="index.php">Accueil</a>
+                        <a class="nav-link <?php if($page == 'acceuil' || $page == '') echo 'active' ?>" href="index.php">Accueil</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Produit</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="index.php?page=login">Connexion</a>
+                        <a class="nav-link <?php if($page == 'login') echo 'active' ?>" href="index.php?page=login">Connexion</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">S'enregistrer</a>
