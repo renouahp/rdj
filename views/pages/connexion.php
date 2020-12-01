@@ -54,7 +54,7 @@ $_SESSION['connected'] = 'no';
 ?>
 <div class="container-fluid mb-5">
     <div class="row">
-        <div class="cover-accueil d-flex">
+        <div class="cover-login cover d-flex">
             <h1 class="align-self-center ml-auto mr-auto">Connexion</h1>
         </div>
     </div>

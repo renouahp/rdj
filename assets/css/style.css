@@ -14,7 +14,7 @@
     background-size: cover;
     height: 400px;
 }
-.cover-404 h1 {
+.cover h1 {
     font-size: 8em;
     font-weight: 700;
     color: white;
@@ -24,8 +24,8 @@
     background-size: cover;
     height: 400px;
 }
-.cover-accueil h1 {
-    font-size: 8em;
-    font-weight: 700;
-    color: white;
+.cover-login {
+    background: url(../img/log-cover.jpg) no-repeat center;
+    background-size: cover;
+    height: 400px;
 }

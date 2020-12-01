@@ -1,6 +1,6 @@
 <div class="container-fluid mb-5">
     <div class="row">
-        <div class="cover-404 d-flex">
+        <div class="cover-404 cover d-flex">
             <h1 class="align-self-center ml-auto mr-auto">ERREUR 404</h1>
         </div>
         <div class="col-12 d-flex gg justify-content-center mt-5">

@@ -1,6 +1,6 @@
 <div class="container-fluid mb-5">
     <div class="row">
-        <div class="cover-accueil d-flex">
+        <div class="cover-accueil cover d-flex">
             <h1 class="align-self-center ml-auto mr-auto">Mega Drop Web.</h1>
         </div>
         <div class="col-12 text-center mt-5">
