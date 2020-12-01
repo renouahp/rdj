@@ -1,6 +1,21 @@
 
+.navbar {
+    font-weight: 500;
+}
+
+.footer {
+    height: 150px;
+    background: black;
+    color: #fff;
+}
+
 .cover-accueil {
     background: url(../img/ac-cover.jpg) no-repeat center;
     background-size: cover;
     height: 400px;
+}
+.cover-accueil h1 {
+    font-size: 8em;
+    font-weight: 700;
+    color: white;
 }
