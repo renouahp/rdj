@@ -7,6 +7,8 @@ $page = $_GET['page'] ?? '';
 
 if($page == ''){
    require_once "views/pages/accueil.php";
+}else if($page == 'login'){
+    require_once "views/pages/connexion.php";
 }else {
     require_once "views/pages/404.php";
 }
