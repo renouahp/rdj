@@ -42,13 +42,19 @@ $_SESSION['connected'] = 'no';
     }
 
 ?>
+<div class="container-fluid mb-5">
+    <div class="row">
+        <div class="cover-accueil d-flex">
+            <h1 class="align-self-center ml-auto mr-auto">Connexion</h1>
+        </div>
+    </div>
+</div>
     <div class="container">
-
-        <div class="row mylogin">
-            <div class="offset-3 col-md-6 myform">
+        <div class="row justify-content-center">
+            <div class="col-10 myform mt-3 mb-5">
                 <form class="form-horizontal" action="index.php" method="post">
                     <fieldset>
-                        <legend>Connexion :</legend>
+                        <legend>Veuillez vous connecter :</legend>
 
                         <!-- Email -->
                         <div class="form-group">
