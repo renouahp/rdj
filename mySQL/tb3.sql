@@ -5,7 +5,7 @@ create table if not exists shopy (
     idItem int (11) not null primary key  auto_increment,
     nom VARCHAR(32),
     categorie varchar(32),
-    description varchar(32),
+    description varchar(500),
     prix int,
     image varchar(32)
 );
