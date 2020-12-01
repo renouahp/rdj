@@ -2,7 +2,7 @@ Select "Bonjour bienvenu dans le monde de SQL" as hello;
 create database if not exists shop;
 use shop;
 create table if not exists shopy (
-    idItem not null auto_increment,
+    idItem int (11) not null primary key  auto_increment,
     nom VARCHAR(32),
     categorie varchar(32),
     description varchar(32),
@@ -24,7 +24,7 @@ values (1, "Chemise Design", "Chemises", "Lorem ipsum dolor sit amet consectetur
 (1, "Item Design", "Disque Dur", "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt repellendus non, praesentium, eveniet, quaerat accusamus nostrum facilis cupiditate sapiente numquam inventore doloribus! Eius, sint atque. Repellat incidunt explicabo asperiores! Sed.", 120, "img.jpg");
 
 create table if not exists user (
-    idpers int(11) not null auto_increment,
+    idpers int(11) not null primary key auto_increment,
     pseudo VARCHAR(32),
     email varchar(32),
     password varchar(32),
