@@ -1,0 +1,6 @@
+
+.cover-accueil {
+    background: url(../img/ac-cover.jpg) no-repeat center;
+    background-size: cover;
+    height: 400px;
+}
