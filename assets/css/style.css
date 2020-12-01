@@ -4,3 +4,8 @@
     background-size: cover;
     height: 400px;
 }
+.cover-accueil h1 {
+    font-size: 8em;
+    font-weight: 700;
+    color: white;
+}
