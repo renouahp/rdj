@@ -5,7 +5,7 @@
         </div>
         <div class="col-12 text-center mt-5">
             <h3>Bienvenue sur notre site web.</h3>
-            <p>Consulter notre cataogue <a href="#">Ici</a>.</p>
+            <p>Consulter notre catalogue <a href="#">Ici</a>.</p>
         </div>
     </div>
 </div>
