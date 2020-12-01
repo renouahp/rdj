@@ -1,7 +1,6 @@
 <?php
 session_start();
 $_SESSION['connected'] = 'no';
-require_once('myincludes/fonctions_util.php');
 
     $err = false;
     $msg_badlogin = '&nbsp;'; // erreur sur le couple (email/mot de passe)
