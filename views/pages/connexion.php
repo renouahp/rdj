@@ -36,7 +36,7 @@ $_SESSION['connected'] = 'no';
             $password = protect_montexte($_POST["txt_password"]); 
         } 
         if (!$err){  
-            $sql = "select * from books where email = $email && password = $password";
+            $sql = "select idpers from user where email = $email && password = $password";
             $result = mysqli_query($conn, $sql);
             $r = mysqli_fetch_assoc($result);
             if(!$r){ 
@@ -45,7 +45,8 @@ $_SESSION['connected'] = 'no';
                
                 $_SESSION['connected'] = 'yes'; 
                 $_SESSION['email'] = $email; 
-                header('Location: accueil.php');
+                $_SESSION['idPers'] = $r;
+                header('Location: index.php');
             }
         }
     }

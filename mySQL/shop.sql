@@ -3,9 +3,12 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : localhost
--- Généré le : mar. 01 déc. 2020 à 15:19
+-- Généré le : mar. 01 déc. 2020 à 15:26
 -- Version du serveur :  5.7.29
 -- Version de PHP : 7.4.4
+drop database if exists shop;
+create database if not exists shop;
+use shop;
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -73,6 +76,13 @@ CREATE TABLE `user` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
+-- Déchargement des données de la table `user`
+--
+
+INSERT INTO `user` (`idpers`, `pseudo`, `email`, `password`, `adresse`, `zipCode`, `ville`, `phoneNb`) VALUES
+(1, 'renouahp', 'rn.rn@gmail.com', '1234567', NULL, NULL, NULL, NULL);
+
+--
 -- Index pour les tables déchargées
 --
 
@@ -102,7 +112,7 @@ ALTER TABLE `shopy`
 -- AUTO_INCREMENT pour la table `user`
 --
 ALTER TABLE `user`
-  MODIFY `idpers` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `idpers` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
