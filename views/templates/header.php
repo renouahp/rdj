@@ -27,7 +27,7 @@
                         <a class="nav-link" href="#">Produit</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Connexion</a>
+                        <a class="nav-link" href="index.php?page=login">Connexion</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">S'enregistrer</a>
