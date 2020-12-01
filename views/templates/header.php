@@ -14,14 +14,14 @@
     <div class="container-fluid">
         <div class="row">
             <nav class="navbar navbar-expand-lg navbar-light sticky-top bg-light">
-                <a class="navbar-brand" href="#">Mega Drop Web</a>
+                <a class="navbar-brand" href="index.php">Mega Drop Web</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Accueil</a>
+                        <a class="nav-link" href="index.php">Accueil</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Produit</a>
