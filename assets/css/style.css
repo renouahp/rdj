@@ -1,4 +1,4 @@
-
+.gg {height: 300px;}
 .navbar {
     font-weight: 500;
 }
@@ -9,6 +9,16 @@
     color: #fff;
 }
 
+.cover-404 {
+    background: url(../img/404-cover.jpg) no-repeat center;
+    background-size: cover;
+    height: 400px;
+}
+.cover-404 h1 {
+    font-size: 8em;
+    font-weight: 700;
+    color: white;
+}
 .cover-accueil {
     background: url(../img/ac-cover.jpg) no-repeat center;
     background-size: cover;
