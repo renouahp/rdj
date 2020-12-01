@@ -1,4 +1,4 @@
-<div class="container-fluid mt-5">
+<div class="container-fluid">
     <div class="row justify-content-center align-items-center footer">
         <div class="col-10">
             <p>Copyright -</p>
