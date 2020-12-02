@@ -39,7 +39,7 @@ $page = $_GET['page'] ?? '';
                             <a class="nav-link <?php if($page == 'login') echo 'active' ?>" href="index.php?page=login">Connexion</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" <?php if($page == 'signin') echo 'active' ?>" href="index.php?page=signin">S'enregistrer</a>
+                            <a class="nav-link <?php if($page == 'signin') echo 'active' ?>" href="index.php?page=signin">S'enregistrer</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Panier</a>
