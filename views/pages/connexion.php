@@ -37,13 +37,12 @@ $_SESSION['connected'] = 'no';
             $password = protect_montexte($_POST["txt_password"]); 
         } 
         if (!$err){  
-            $sql = "select idpers from user where email = $email && password = $password";
+            $sql = "select * from user where email = $email && password = $password";
             $result = mysqli_query($conn, $sql);
-            $r = mysqli_fetch_assoc($result);
-            if(!$r['idpers']){ 
+            if(!$result){ 
                 $msg_badlogin = "L'email et/ou le mot de passe : NON correct.."; 
             } else {
-               
+                $r = mysqli_fetch_assoc($result);
                 $_SESSION['connected'] = 'yes'; 
                 $_SESSION['email'] = $email; 
                 $_SESSION['idPers'] = $r['idpers'];
@@ -62,13 +61,8 @@ $_SESSION['connected'] = 'no';
 </div>
     <div class="container">
     <div class="row justify-content-center">
-<<<<<<< Updated upstream
             <div class="col-4 myform mt-3 mb-5">
-                <form class="form-horizontal" action="index.php" method="post">
-=======
-            <div class="col-10 myform mt-3 mb-5">
                 <form class="form-horizontal" action="index.php?page=login" method="post">
->>>>>>> Stashed changes
                     <fieldset>
                         <legend>Veuillez vous connecter :</legend>
 
