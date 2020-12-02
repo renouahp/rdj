@@ -1,4 +1,7 @@
-<?php $page = $_GET['page'] ?? ''; ?>
+<?php 
+session_start();
+$page = $_GET['page'] ?? '';
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -42,9 +45,12 @@
                             <a class="nav-link" href="#">Panier</a>
                         </li>
                     </ul>
-                    <form class="form-inline my-2 my-lg-0">
-                        <input class="form-control mr-sm-2 d-inline w-auto" type="search" placeholder="Pulls, livres, Pc..">
-                        <button class="btn btn-outline-success my-2 my-sm-0 position-relative ff" type="submit">Chercher</button>
+                    <form class="form-inline my-2 my-lg-0" action="index.php?page=search">
+                        <input class="form-control mr-sm-2 d-inline w-auto" type="search" name="src" placeholder="Pulls, livres, Pc..">
+                        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                        <button type="submit" name="page" value="search" class="btn btn-sm btn-primary ff">Chercher</button>
+<?php if(isset($_SESSION['connected'])) echo '<a href="index.php?page=logout" role="button" class="btn btn-sm btn-primary ff">Deconnexion</a>'; ?>
+                        </div>
                     </form>
                 </div>
             </nav>

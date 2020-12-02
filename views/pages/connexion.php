@@ -5,7 +5,6 @@ function protection_minimal($conn, $var)
 }
 require_once 'login.inc.php';
 require_once 'assets/fonctions_util.php';
-session_start();
 $_SESSION['connected'] = 'no';
 
     $err = false;
@@ -37,7 +36,7 @@ $_SESSION['connected'] = 'no';
             $password = protect_montexte($_POST["txt_password"]); 
         } 
         if (!$err){  
-            $sql = "select * from user where email = $email && password = $password";
+            $sql = "select * from user where email = '$email' && password = '$password'";
             $result = mysqli_query($conn, $sql);
             if(!$result){ 
                 $msg_badlogin = "L'email et/ou le mot de passe : NON correct.."; 
