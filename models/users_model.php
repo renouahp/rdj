@@ -15,7 +15,7 @@ class Users_Model{
         }
     }
 
-    public function getAll(){
+    public function selectAll(){
         $sql = "SELECT * FROM user order by idpers";
         $st = $this->conn->prepare($sql);
         $st->execute();
@@ -23,7 +23,7 @@ class Users_Model{
         return $this->data;
     }
 
-    public function getOne($id){
+    public function selectOne($id){
         $sql = "select * from stagiaires where id = $id";
         $st = $this->conn->prepare($sql);
         $st->execute();
