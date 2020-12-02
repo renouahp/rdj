@@ -27,7 +27,7 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Produits</a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="#">Vêtements</a>
+                        <a class="dropdown-item" href="views/pages/vetements.php">Vêtements</a>
                         <a class="dropdown-item" href="#">Livres</a>
                         <a class="dropdown-item" href="#"> Matériel informatique</a>
                         </div>
