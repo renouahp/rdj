@@ -1,7 +1,7 @@
 <div class="container-fluid">
     <div class="row justify-content-center align-items-center footer">
         <div class="col-10">
-            <p>Copyright -</p>
+            <p>Copyright - Si ce monde part en fumée</p>
         </div>
     </div>
 </div>
