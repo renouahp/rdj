@@ -36,7 +36,10 @@ $page = $_GET['page'] ?? '';
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link <?php if($page == 'login') echo 'active' ?>" href="index.php?page=login">Connexion</a>
+                        <?php           
+                            $active = ($page == 'login') ? 'active' : '';
+                            if(!isset($_SESSION['connected'])) echo '<a class="nav-link '.$active.'" href="index.php?page=login">Connexion</a>';
+                        ?>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link <?php if($page == 'signin') echo 'active' ?>" href="index.php?page=signin">S'enregistrer</a>
