@@ -2,6 +2,7 @@
 .ff {top: -2px;}
 .navbar {
     font-weight: 500;
+    box-shadow: 0px 0px 4px 0px #00000080;
 }
 
 .footer {
