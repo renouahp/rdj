@@ -38,7 +38,7 @@ CREATE TABLE `shopy` (
   `description` varchar(500) DEFAULT NULL,
   `prix` int(11) DEFAULT NULL,
   `image` varchar(32) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Déchargement des données de la table `shopy`
@@ -53,9 +53,9 @@ INSERT INTO `shopy` (`idItem`, `nom`, `categorie`, `description`, `prix`, `image
 (6, 'Livre Design', 'Science-Fiction', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt repellendus non, praesentium, eveniet, quaerat accusamus nostrum facilis cupiditate sapiente numquam inventore doloribus! Eius, sint atque. Repellat incidunt explicabo asperiores! Sed.', 120, 'img.jpg'),
 (7, 'Livre Design', 'Horreur', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt repellendus non, praesentium, eveniet, quaerat accusamus nostrum facilis cupiditate sapiente numquam inventore doloribus! Eius, sint atque. Repellat incidunt explicabo asperiores! Sed.', 120, 'img.jpg'),
 (8, 'Livre Design', 'Aventure', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt repellendus non, praesentium, eveniet, quaerat accusamus nostrum facilis cupiditate sapiente numquam inventore doloribus! Eius, sint atque. Repellat incidunt explicabo asperiores! Sed.', 120, 'img.jpg'),
-(9, 'Item Design', 'Carte mère', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt repellendus non, praesentium, eveniet, quaerat accusamus nostrum facilis cupiditate sapiente numquam inventore doloribus! Eius, sint atque. Repellat incidunt explicabo asperiores! Sed.', 120, 'img.jpg'),
+(9, 'Item Design', 'Carte mere', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt repellendus non, praesentium, eveniet, quaerat accusamus nostrum facilis cupiditate sapiente numquam inventore doloribus! Eius, sint atque. Repellat incidunt explicabo asperiores! Sed.', 120, 'img.jpg'),
 (10, 'Item Design', 'Processeur', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt repellendus non, praesentium, eveniet, quaerat accusamus nostrum facilis cupiditate sapiente numquam inventore doloribus! Eius, sint atque. Repellat incidunt explicabo asperiores! Sed.', 120, 'img.jpg'),
-(11, 'Item Design', 'Mémoire', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt repellendus non, praesentium, eveniet, quaerat accusamus nostrum facilis cupiditate sapiente numquam inventore doloribus! Eius, sint atque. Repellat incidunt explicabo asperiores! Sed.', 120, 'img.jpg'),
+(11, 'Item Design', 'Memoire', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt repellendus non, praesentium, eveniet, quaerat accusamus nostrum facilis cupiditate sapiente numquam inventore doloribus! Eius, sint atque. Repellat incidunt explicabo asperiores! Sed.', 120, 'img.jpg'),
 (12, 'Item Design', 'Disque Dur', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt repellendus non, praesentium, eveniet, quaerat accusamus nostrum facilis cupiditate sapiente numquam inventore doloribus! Eius, sint atque. Repellat incidunt explicabo asperiores! Sed.', 120, 'img.jpg');
 
 -- --------------------------------------------------------
@@ -73,7 +73,7 @@ CREATE TABLE `user` (
   `zipCode` int(11) DEFAULT NULL,
   `ville` varchar(32) DEFAULT NULL,
   `phoneNb` int(11) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Déchargement des données de la table `user`
