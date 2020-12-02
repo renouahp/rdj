@@ -4,6 +4,7 @@ function protection_minimal($conn, $var)
     return mysqli_real_escape_string($conn, $_POST[$var]);
 }
 require_once 'login.inc.php';
+require_once 'assets/fonctions_util.php';
 session_start();
 $_SESSION['connected'] = 'no';
 
@@ -39,14 +40,14 @@ $_SESSION['connected'] = 'no';
             $sql = "select idpers from user where email = $email && password = $password";
             $result = mysqli_query($conn, $sql);
             $r = mysqli_fetch_assoc($result);
-            if(!$r){ 
+            if(!$r['idpers']){ 
                 $msg_badlogin = "L'email et/ou le mot de passe : NON correct.."; 
             } else {
                
                 $_SESSION['connected'] = 'yes'; 
                 $_SESSION['email'] = $email; 
-                $_SESSION['idPers'] = $r;
-                header('Location: index.php');
+                $_SESSION['idPers'] = $r['idpers'];
+                //header('Location: index.php');
             }
         }
     }
@@ -61,8 +62,13 @@ $_SESSION['connected'] = 'no';
 </div>
     <div class="container">
     <div class="row justify-content-center">
+<<<<<<< Updated upstream
             <div class="col-4 myform mt-3 mb-5">
                 <form class="form-horizontal" action="index.php" method="post">
+=======
+            <div class="col-10 myform mt-3 mb-5">
+                <form class="form-horizontal" action="index.php?page=login" method="post">
+>>>>>>> Stashed changes
                     <fieldset>
                         <legend>Veuillez vous connecter :</legend>
 
