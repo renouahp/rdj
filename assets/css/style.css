@@ -31,3 +31,8 @@
     background-size: cover;
     height: 400px;
 }
+.cover-signin {
+    background: url(../img/sign-cover.jpg) no-repeat center;
+    background-size: cover;
+    height: 400px;
+}

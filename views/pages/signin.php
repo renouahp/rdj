@@ -63,7 +63,7 @@
 ?>
 <div class="container-fluid mb-5">
     <div class="row">
-        <div class="cover-login cover d-flex">
+        <div class="cover-signin cover d-flex">
             <h1 class="align-self-center ml-auto mr-auto">S'enregistrer</h1>
         </div>
     </div>
