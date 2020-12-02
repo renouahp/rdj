@@ -24,8 +24,13 @@
                     <li class="nav-item active">
                         <a class="nav-link <?php if($page == 'accueil' || $page == '') echo 'active' ?>" href="index.php">Accueil</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Produit</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Produits</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Vêtements</a>
+                        <a class="dropdown-item" href="#">Livres</a>
+                        <a class="dropdown-item" href="#"> Matériel informatique</a>
+                        </div>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link <?php if($page == 'login') echo 'active' ?>" href="index.php?page=login">Connexion</a>
