@@ -14,7 +14,7 @@
 <body>
     <div class="container-fluid">
         <div class="row">
-            <nav class="col-12 navbar navbar-expand-lg navbar-light sticky-top bg-light">
+            <nav class="col-12 navbar navbar-expand-lg navbar-light fixed-top bg-light">
                 <a class="navbar-brand" href="index.php">Mega Drop Web</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
