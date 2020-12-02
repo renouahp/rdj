@@ -36,10 +36,18 @@ $page = $_GET['page'] ?? '';
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link <?php if($page == 'login') echo 'active' ?>" href="index.php?page=login">Connexion</a>
+                        <?php           
+                            $active = ($page == 'login') ? 'active' : '';
+                            if(!isset($_SESSION['connected'])) echo '<a class="nav-link '.$active.'" href="index.php?page=login">Connexion</a>';
+                        ?>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" <?php if($page == 'signin') echo 'active' ?>" href="index.php?page=signin">S'enregistrer</a>
+                        <?php
+                            $active_sign = ($page == 'signin') ? 'active' : '';
+                            $active_acc = ($page == 'account') ? 'active' : '';
+                            if(isset($_SESSION['connected'])) echo '<a class="nav-link '.$active_acc.'" href="index.php?page=account">Compte</a>';
+                            else echo '<a class="nav-link '.$active_sign.'" href="index.php?page=signin">S\'enregistrer</a>';
+                        ?>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Panier</a>
