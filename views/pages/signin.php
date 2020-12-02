@@ -46,15 +46,7 @@
             $password = $_POST["txt_password"]; 
         } 
         if (!$err){  
-            $hn = 'localhost';
-            $db = 'shop';
-            $un = 'root';
-            $pw = 'root';
-            $conn = new mysqli($hn, $un, $pw, $db);
-
-            $sql = "insert into user (pseudo, email, password) values ('$nom', '$email', '$password')";
-            $res = mysqli_query($conn, $sql);
-
+            $res = $users_mod->insertOne($nom, $email, $prenom);
             if($res == true) header('Location: index.php?page=login');
             else $msg_badsignin = 'Une erreur est survenue lors de l\'inscription, veuillez réessayer.';
         }

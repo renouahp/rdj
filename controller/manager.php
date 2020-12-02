@@ -1,7 +1,7 @@
 <?php
 
-//require_once "model/model_stag.php"; // model.php
-//$mod = new Model_Stag();
+require_once "models/users_model.php";
+$users_mod = new Users_Model();
 
 $page = $_GET['page'] ?? '';
 
