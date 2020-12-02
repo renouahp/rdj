@@ -1,7 +1,7 @@
 <?php 
 // login.inc.php
 $hn = 'localhost';
-$db = 'books';
+$db = 'shop';
 $un = 'root';
 $pw = 'root';
 
