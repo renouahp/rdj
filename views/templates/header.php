@@ -22,7 +22,7 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link <?php if($page == 'acceuil' || $page == '') echo 'active' ?>" href="index.php">Accueil</a>
+                        <a class="nav-link <?php if($page == 'accueil' || $page == '') echo 'active' ?>" href="index.php">Accueil</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Produit</a>
