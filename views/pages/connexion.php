@@ -5,7 +5,6 @@ function protection_minimal($conn, $var)
 }
 require_once 'login.inc.php';
 require_once 'assets/fonctions_util.php';
-$_SESSION['connected'] = 'no';
 
     $err = false;
     $msg_badlogin = '&nbsp;'; // erreur sur le couple (email/mot de passe)
