@@ -61,7 +61,7 @@ $_SESSION['connected'] = 'no';
 </div>
     <div class="container">
     <div class="row justify-content-center">
-            <div class="col-10 myform mt-3 mb-5">
+            <div class="col-4 myform mt-3 mb-5">
                 <form class="form-horizontal" action="index.php" method="post">
                     <fieldset>
                         <legend>Veuillez vous connecter :</legend>
@@ -101,6 +101,18 @@ $_SESSION['connected'] = 'no';
                         </div>
                     </fieldset>
                 </form>
+            </div>
+            <div class="col-6">
+                <h3>Lorem ipsum dolor sit amet consectetur </h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Pariatur, quis commodi reprehenderit molestias iste similique inventore voluptatum doloribus asperiores harum rem odio, 
+                labore ut praesentium, in earum tempora eos aperiam!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Pariatur, quis commodi reprehenderit molestias iste similique inventore voluptatum doloribus asperiores harum rem odio, 
+                labore ut praesentium, in earum tempora eos aperiam!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Pariatur, quis commodi reprehenderit molestias iste similique inventore voluptatum doloribus asperiores harum rem odio, 
+                labore ut praesentium, in earum tempora eos aperiam!</p>
             </div>
         </div>
 
