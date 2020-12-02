@@ -46,7 +46,7 @@ $_SESSION['connected'] = 'no';
                 $_SESSION['connected'] = 'yes'; 
                 $_SESSION['email'] = $email; 
                 $_SESSION['idPers'] = $r['idpers'];
-                //header('Location: index.php');
+                header('Location: index.php');
             }
         }
     }
