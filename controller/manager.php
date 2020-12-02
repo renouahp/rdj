@@ -9,6 +9,8 @@ if($page == ''){
    require_once "views/pages/accueil.php";
 }else if($page == 'login'){
     require_once "views/pages/connexion.php";
+}else if($page == 'signin'){
+    require_once "views/pages/signin.php";
 }else if($page == 'vetements'){
     require_once "views/pages/vetements.php";
 }else if($page == 'livres'){
