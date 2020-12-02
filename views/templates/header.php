@@ -28,8 +28,8 @@
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Produits</a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                             <a class="dropdown-item" href="index.php?page=vetements">Vêtements</a>
-                            <a class="dropdown-item" href="#">Livres</a>
-                            <a class="dropdown-item" href="#"> Matériel informatique</a>
+                            <a class="dropdown-item" href="index.php?page=livres">Livres</a>
+                            <a class="dropdown-item" href="index.php?page=materiel"> Matériel informatique</a>
                             </div>
                         </li>
                         <li class="nav-item">

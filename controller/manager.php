@@ -11,6 +11,10 @@ if($page == ''){
     require_once "views/pages/connexion.php";
 }else if($page == 'vetements'){
     require_once "views/pages/vetements.php";
+}else if($page == 'livres'){
+    require_once "views/pages/livres.php";
+}else if($page == 'materiel'){
+    require_once "views/pages/materiel.php";
 }else {
     require_once "views/pages/404.php";
 }
