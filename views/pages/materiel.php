@@ -11,7 +11,7 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "SELECT nom, categorie, description, prix, image FROM shopy WHERE categorie='Carte mère' or categorie='Processeur' or categorie='Mémoire' or categorie='Disque Dur'";
+$sql = "SELECT nom, categorie, description, prix, image FROM shopy WHERE categorie='Carte mere' or categorie='Processeur' or categorie='Memoire' or categorie='Disque Dur'";
 
 $result = $conn->query($sql);
 if ($result->num_rows > 0) {
